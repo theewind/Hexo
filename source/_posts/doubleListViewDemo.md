@@ -3,7 +3,7 @@ title: React Native 双listView交互动画
 date: 2016-06-03 11:41:01
 tags: react native
 ---
-此demo算是自己学习React Natvie的一个小例子的。
+此demo算是自己学习React Natvie的一个小例子的。![效果如下](../img/doubleListViewdemo.gif)
 
 因为开发过程中，经常需要使用两个ListView进行交互，具体实现参考[DEMO](https://github.com/theewind/RCTDoubleListViewDemo)
 
