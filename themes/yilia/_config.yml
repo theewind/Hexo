@@ -9,10 +9,9 @@ menu:
 # SubNav
 subnav:
   github: https://github.com/theewind
-  mail: sanfengflying@126.com
-  #weibo: "#"
-  #Sitemap: "/sitemap.xml"
-  #rss: "/atom.xml"
+  mail: mailto:sanfengflying@126.com
+  rss: "/atom.xml"
+  Sitemap: "/sitemap.xml"
   #zhihu: "#"
   #douban: "#"
   #facebook: "#"
@@ -31,7 +30,7 @@ mathjax: true
 animate: true
 
 # 是否在新窗口打开链接
-open_in_new: true
+open_in_new: flase
 
 # Miscellaneous
 google_analytics: ''
@@ -44,10 +43,13 @@ share_jia: true
 share_addthis: false
 #是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key
 #若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
-duoshuo: false
+duoshuo: theewind
 #是否开启云标签
 tagcloud: true
-
+visit_counter:
+  on: true
+  site_visit: 本站到访数
+  page_visit: 本页阅读量
 #是否开启友情链接
 #不开启——
 friends: false
