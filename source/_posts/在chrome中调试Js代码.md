@@ -15,7 +15,7 @@ tags:
 4. 设置断点
 5. console中执行js中的功能，记性断点调试即可。
 
-![如下截图](../img/chrome_js_debug_snippets.png)
+![如下截图](http://o981ibvmi.bkt.clouddn.com/chrome_js_debug_snippets.png)
 
 
 > ###参考链接

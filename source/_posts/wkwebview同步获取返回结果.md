@@ -28,7 +28,7 @@ tags:
     return res;
 }
    ```
-   将WKWebView修改为同步状态，然后进行对比，主要是测试JavaScript函数执行100，300，500，1000，3000次，统计时间，可以发现在相同JS功能情况下，WKWebView的效率还没有UIWebView的效率高，如![下图](../img/aaa.png)
+   将WKWebView修改为同步状态，然后进行对比，主要是测试JavaScript函数执行100，300，500，1000，3000次，统计时间，可以发现在相同JS功能情况下，WKWebView的效率还没有UIWebView的效率高，如![下图](http://o981ibvmi.bkt.clouddn.com/uiwebview_wkwebview_jscore.png)
    可以看出，JavascriptCore的效率是最高的，而WKWebView改成同步以后，实际效果是最差的，分析原因也可能是因为，WKWebView不是这样用的，毕竟在无限等待中，所以结果也可能是受影响的。
    
  > 

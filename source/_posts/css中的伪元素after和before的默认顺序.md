@@ -50,7 +50,7 @@ tags:
 			z-index:auto;
 	}
 ```
-运行结果如下：![](../img/css_after_before.png)
+运行结果如下：![](http://o981ibvmi.bkt.clouddn.com/css_after_before.png)
 
 跟上面的图片结果是一样的。那么如果想修改after和before的顺序呢，只要添加z-index:就行，比如-1等。所以很多动画效果都可以通过这个来实现，[参考网站](http://zaole.net).
 
