@@ -120,6 +120,7 @@ int main(int argc, char *argv[]) {
     _offset = ivar_getOffset(ivar);
 
 ```
+`日常我们写一个property时，系统会默认给我们生成一个对应的_property的ivar，如果property前面添加了_,或者__呢，经试验系统还是会默认在这些前面继续加_的`
 
 那如何区分那些是weak，那些是strong呢，这里就需要对Class的 Ivar Layout有一定的了解
 
