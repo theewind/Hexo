@@ -117,5 +117,23 @@ p12文件是二进制格式，同时含私钥和证书，通常有保护密码
 
 > [http://blog.chinaunix.net/uid-26575352-id-3073802.html](http://blog.chinaunix.net/uid-26575352-id-3073802.html)
 
+后续开发需要，证书及配置文件的制作，请参考
 
+[iOS开发证书与配置文件的使用](http://www.jianshu.com/p/9d9e3699515e)
+
+Provisioning Profile文件包含了上述所有内容：证书，App ID，设备，后缀名为.mobileprovision。
+>
+一个Provisioning Profile对应一个Explicit App ID或Wildcard App ID。
+> 
+Provisioning Profile决定Xcode用哪个证书（公钥）/私钥组合（Key Pair/Signing Identity）来签名应用程序（Signing Product）,将在应用程序打包时嵌入到.ipa包里。
+>
+Provisioning Profile把这些信息全部打包在一起，方便我们在调试和发布程序打包时使用。这样，只要在不同的情况下选择不同的Provisioning Profile文件就可以了。
+>
+Provisioning Profile也分为Development和Distribution两类，有效期同Certificate一样。
+>
+Development版本的ProvisioningProfile用于开发调试，Distribution版本的ProvisioningProfile主要用于提交App Store审核，其不指定开发测试的Devices。
+>
+xcode开发时，需在XcodeTarget->Build Settings->Code Signing->Provisioning Profile下配置对应的描述文件（Provisioning Profiles），然后在Code Signing Identity下拉可选择Identities from Profile "..."（即Provisioning Profile中包含的Certificates）。
+>
+在XcodeTarget->Build Settings->Code Signing->Provisioning Profile可选择“Automatic”，xcode会根据该Target的“Bundle identifier”选择默认的配置文件及证书。
 
